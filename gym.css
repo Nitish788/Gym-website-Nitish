@@ -1,426 +1,431 @@
 * {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-  font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    max-width: 100vw;
+    height: 100vh;
 }
 
 #navbar {
-  display: flex;
-  align-items: center;
-  position: sticky;
-  top: 0px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
 }
 
 #navbar::before {
-  content: "";
-  background-color: black;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  opacity: 0.6;
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
 }
 
 #logo {
-  margin: 10px 34px;
+    margin: 10px 34px;
 }
 
 #logo img {
-  height: 65px;
-  margin: 3px 6px;
+    height: 65px;
+    margin: 3px 6px;
 }
 
 #navbar ul {
-  display: flex;
+    display: flex;
 }
 
 #navbar ul li {
-  list-style: none;
+    list-style: none;
 }
 
 #navbar ul li a {
-  text-decoration: none;
-  color: white;
-  display: block;
-  padding: 3px 22px;
-  border-radius: 20px;
-  font-family: cursive;
-  position: relative;
-  left: 320px;
-  margin-top: 8px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    font-family: cursive;
+    position: relative;
+    left: 320px;
+    margin-top: 8px;
 }
 
 #navbar ul li a:hover {
-  background-color: white;
-  color: tomato;
+    background-color: white;
+    color: tomato;
 }
 
 #name {
-  color: red;
-  font-size: 2.1em;
-  font-family: "Tourney", cursive;
-  margin-top: 6px;
+    color: red;
+    font-size: 2.1em;
+    font-family: "Tourney", cursive;
+    margin-top: 6px;
 }
 
 .btn {
-  position: relative;
-  left: 340px;
-  padding: 15px 25px;
-  background-color: rgba(238, 33, 26, 0.952);
-  border-radius: 42px;
+    position: relative;
+    left: 340px;
+    padding: 15px 25px;
+    background-color: rgba(238, 33, 26, 0.952);
+    border-radius: 42px;
 }
 
 button:hover {
-  background-color: red;
-  color: white;
-  cursor: pointer;
+    background-color: red;
+    color: white;
+    cursor: pointer;
 }
 
 #home {
-  display: flex;
-  flex-direction: column;
-  height: 550px;
-  padding: 3px 90px;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    padding: 3px 90px;
+    justify-content: center;
 }
 
 #home::before {
-  content: "";
-  position: absolute;
-  height: 642px;
-  background-image: url(gy.jpg);
-  background-position: center center/cover;
-  background-repeat: no-repeat;
-  z-index: -1;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  opacity: 0.55;
+    content: "";
+    position: absolute;
+    height: 642px;
+    background-image: url(gy.jpg);
+    background-position: center center/cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    opacity: 0.55;
 }
 
 #home h5 {
-  color: rgb(240, 11, 11);
-  font-size: 1.5em;
+    color: rgb(240, 11, 11);
+    font-size: 1.5em;
 }
 
 #home pre {
-  font-size: 1.5rem;
-  font-family: "Oswald", sans-serif;
+    font-size: 1.5rem;
+    font-family: "Oswald", sans-serif;
 }
 
 .bt {
-  width: 15%;
-  padding: 15px;
-  position: relative;
-  left: 260px;
-  bottom: 20px;
-  background-color: rgba(238, 33, 26, 0.952);
-  font-size: medium;
+    width: 15%;
+    padding: 15px;
+    position: relative;
+    left: 260px;
+    bottom: 20px;
+    background-color: rgba(238, 33, 26, 0.952);
+    font-size: medium;
 }
 
 #abo img {
-  width: 43em;
-  display: flex;
-  margin-right: 15px;
+    width: 43em;
+    display: flex;
+    margin-right: 15px;
 }
 
 #about {
-  display: flex;
-  /* align-items: center; */
-  background-color: black;
-  color: white;
-  margin: 100px 0px;
+    display: flex;
+    /* align-items: center; */
+    background-color: black;
+    color: white;
+    margin: 100px 0px;
 }
 
 .abou h2,
 .a {
-  color: red;
-  position: relative;
-  top: 70px;
-  margin: 50px;
+    color: red;
+    position: relative;
+    top: 70px;
+    margin: 50px;
 }
 
 .a {
-  font-family: "Oswald", sans-serif;
-  font-size: 1.7em;
-  color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.7em;
+    color: white;
 }
 
 #cent {
-  position: relative;
-  top: 90px;
-  text-align: center;
-  font-size: 2em;
+    position: relative;
+    top: 90px;
+    text-align: center;
+    font-size: 2em;
 }
 
 #about p {
-  color: white;
-  position: relative;
-  top: 130px;
+    color: white;
+    position: relative;
+    top: 130px;
 }
 
 #service-section::before {
-  content: "";
-  width: 100%;
-  height: 1200px;
-  background-image: url(g4.jpg);
-  background-repeat: no-repeat;
-  /* background-position: center center; */
-  background-size: 1400px 1100px;
-  position: absolute;
-  z-index: -1;
-  opacity: 0.76;
-  left: 0px;
+    content: "";
+    width: 100%;
+    height: 1200px;
+    background-image: url(g4.jpg);
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    background-size: 1400px 1100px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.76;
+    left: 0px;
 }
 
 .ser {
-  position: relative;
-  top: 250px;
-  left: 80px;
-  margin: 25px;
+    position: relative;
+    top: 250px;
+    left: 80px;
+    margin: 25px;
 }
 
 #service-head {
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 #service-p {
-  color: white;
-  font-size: 2.6em;
-  font-family: "Oswald", sans-serif;
+    color: white;
+    font-size: 2.6em;
+    font-family: "Oswald", sans-serif;
 }
 
 #service-section {
-  display: flex;
-  margin: 14px;
-  flex-direction: column;
+    display: flex;
+    margin: 14px;
+    flex-direction: column;
 }
 
 .box {
-  border: 4px solid white;
-  margin: 10px;
-  display: flex;
-  width: 50%;
-  flex-direction: column;
-  position: relative;
-  top: 320px;
-  height: 420px;
-  background-color: rgb(255, 145, 0);
-  border-radius: 24px;
-  padding: 4px 7px;
+    border: 4px solid white;
+    margin: 10px;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    position: relative;
+    top: 320px;
+    height: 420px;
+    background-color: rgb(255, 145, 0);
+    border-radius: 24px;
+    padding: 4px 7px;
 }
 
 .box img {
-  width: 13em;
-  height: 10em;
-  display: block;
-  margin: auto;
+    width: 13em;
+    height: 10em;
+    display: block;
+    margin: auto;
 }
 
 #colu {
-  display: flex;
+    display: flex;
 }
 
 .box h4 {
-  text-align: center;
-  position: relative;
-  bottom: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 40px;
 }
 
 #box-3 img {
-  width: 18em;
-  border: 8px solid white;
+    width: 18em;
+    border: 8px solid white;
 }
 
 .box p {
-  position: relative;
-  bottom: 18px;
+    position: relative;
+    bottom: 18px;
 }
 
 .gallery {
-  display: flex;
-  margin-top: 510px;
-  height: 600px;
+    display: flex;
+    margin-top: 510px;
+    height: 600px;
 }
 
 .gallery img {
-  width: 100%;
-  padding: 8px;
+    width: 100%;
+    padding: 8px;
 }
 
 #img-1 {
-  margin-left: 4px;
+    margin-left: 4px;
 }
 
 #img-1 h3 {
-  position: relative;
-  bottom: 16em;
-  left: 3em;
-  color: rgb(223, 29, 29);
-  font-size: 2em;
+    position: relative;
+    bottom: 16em;
+    left: 3em;
+    color: rgb(223, 29, 29);
+    font-size: 2em;
 }
 
 #trainer {
-  display: flex;
-  padding: 20px;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 #member img {
-  padding: 50px;
-  height: 20em;
+    padding: 50px;
+    height: 20em;
 }
 
 #member {
-  height: 550px;
-  width: 100%;
+    height: 550px;
+    width: 100%;
 }
 
 #member h3 {
-  margin: 30px;
-  color: red;
+    margin: 30px;
+    color: red;
 }
 
 #member h2 {
-  margin-left: 50px;
-  font-family: "Oswald", sans-serif;
-  font-size: 2.1em;
+    margin-left: 50px;
+    font-family: "Oswald", sans-serif;
+    font-size: 2.1em;
 }
 
 #member h5 {
-  text-align: center;
-  position: relative;
-  bottom: 20px;
-  font-size: 1.5em;
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+    font-size: 1.5em;
 }
 
 #contact img {
-  max-width: 35em;
-  margin-top: 100px;
-  margin-left: 2px;
+    max-width: 35em;
+    margin-top: 100px;
+    margin-left: 2px;
 }
 
 #contact {
-  display: flex;
+    display: flex;
 }
 
 #for {
-  position: relative;
-  top: 17em;
-  left: 7em;
+    position: relative;
+    top: 17em;
+    left: 7em;
 }
 
 #contact h3 {
-  position: relative;
-  bottom: 4em;
-  right: 2em;
-  color: red;
+    position: relative;
+    bottom: 4em;
+    right: 2em;
+    color: red;
 }
 
 #contact h2 {
-  position: relative;
-  bottom: 1.2em;
-  font-size: 1.8em;
-  font-family: "Oswald", sans-serif;
+    position: relative;
+    bottom: 1.2em;
+    font-size: 1.8em;
+    font-family: "Oswald", sans-serif;
 }
 
 input[type="text"] {
-  padding: 2em;
-  max-width: 100em;
-  text-transform: capitalize;
-  border: 2px solid white;
-  border-bottom: 4px solid gray;
-  margin-right: 3em;
+    padding: 2em;
+    max-width: 100em;
+    text-transform: capitalize;
+    border: 2px solid white;
+    border-bottom: 4px solid gray;
+    margin-right: 3em;
 }
 
 input[type="number"] {
-  padding: 2em;
-  max-width: 100%;
-  border: 2px solid white;
-  border-bottom: 4px solid gray;
+    padding: 2em;
+    max-width: 100%;
+    border: 2px solid white;
+    border-bottom: 4px solid gray;
 }
 
 select {
-  padding: 2em;
-  max-width: 100%;
-  border: 2px solid white;
-  border-bottom: 4px solid gray;
+    padding: 2em;
+    max-width: 100%;
+    border: 2px solid white;
+    border-bottom: 4px solid gray;
 }
 
 input[type="email"] {
-  padding: 2em;
-  max-width: 100em;
-  border: 2px solid white;
-  border-bottom: 4px solid gray;
-  margin-right: 3em;
+    padding: 2em;
+    max-width: 100em;
+    border: 2px solid white;
+    border-bottom: 4px solid gray;
+    margin-right: 3em;
 }
 
 input[type="submit"] {
-  padding: 1.5em;
-  max-width: 30em;
-  background-color: rgb(223, 29, 29);
-  border-radius: 24em;
-  position: relative;
-  left: 13em;
+    padding: 1.5em;
+    max-width: 30em;
+    background-color: rgb(223, 29, 29);
+    border-radius: 24em;
+    position: relative;
+    left: 13em;
 }
 
 input[type="submit"]:hover {
-  background-color: red;
-  color: white;
-  cursor: pointer;
+    background-color: red;
+    color: white;
+    cursor: pointer;
 }
 
 #end::before {
-  content: "";
-  height: 600px;
-  width: 100%;
-  background-image: url(g9.jpg);
-  background-position: center center/ cover;
-  background-repeat: no-repeat;
-  background-size: 80em 60em;
-  position: absolute;
-  z-index: -1;
-  opacity: 0.7;
+    content: "";
+    height: 600px;
+    width: 100%;
+    background-image: url(g9.jpg);
+    background-position: center center/ cover;
+    background-repeat: no-repeat;
+    background-size: 80em 60em;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
 }
 
 footer {
-  margin-top: 40px;
+    margin-top: 40px;
 }
 
 #schedule {
-  position: relative;
-  top: 14em;
-  left: 5em;
+    position: relative;
+    top: 14em;
+    left: 5em;
 }
 
 #schedule h2,
 h5 {
-  margin: 1.7em;
+    margin: 1.7em;
 }
 
 #schedule h5 {
-  position: relative;
-  left: 1.2em;
-  font-size: 1.2em;
+    position: relative;
+    left: 1.2em;
+    font-size: 1.2em;
 }
 
 #end pre {
-  position: relative;
-  top: 18em;
-  left: 26em;
+    position: relative;
+    top: 18em;
+    left: 26em;
 }
 
 pre strong {
-  color: rgb(230, 17, 17);
-  font-family: "Tourney", cursive;
-  font-size: 2.5em;
+    color: rgb(230, 17, 17);
+    font-family: "Tourney", cursive;
+    font-size: 2.5em;
 }
 
 #end hr {
-  position: relative;
-  top: 16em;
+    position: relative;
+    top: 16em;
 }
