@@ -19,10 +19,10 @@
         <ul>
             <li id="name">Gain Muscles</li>
             <li><a href="index.htm">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Schedule</a></li>
-            <li><a href="">Contact</a></li>
-            <button type="button" class="btn">Register Now!</button>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service-section">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><button type="button" class="btn">Register Now!</button></li>
         </ul>
     </nav>
     <section id="home">
@@ -99,21 +99,22 @@ PUSH YOUR LIMIT
       </div>
       <hr />
     </section>
-
-    <div class="gallery">
-      <div id="img-1">
-        <img src="img/g8.jpeg" alt="" />
-        <h3><u>Fitness Gallery</u></h3>
+    <section id="gallery">
+      <div class="gallery">
+        <div id="img-1">
+          <img src="img/g8.jpeg" alt="" />
+          <h3><u>Fitness Gallery</u></h3>
+        </div>
+        <div id="pro-1">
+          <div id="img-2"><img src="img/g5.jpeg" alt="" /></div>
+          <div id="img-3"><img src="img/g6.jpeg" alt="" /></div>
+        </div>
+        <div id="pro-2">
+          <div id="img-4"><img src="img/g7.jpeg" alt="" /></div>
+          <div id="img-5"><img src="img/g10.jpg" alt="" /></div>
+        </div>
       </div>
-      <div id="pro-1">
-        <div id="img-2"><img src="img/g5.jpeg" alt="" /></div>
-        <div id="img-3"><img src="img/g6.jpeg" alt="" /></div>
-      </div>
-      <div id="pro-2">
-        <div id="img-4"><img src="img/g7.jpeg" alt="" /></div>
-        <div id="img-5"><img src="img/g10.jpg" alt="" /></div>
-      </div>
-    </div>
+    </section>
     <hr />
     <section id="member">
       <h3>&#x2014;&#x2014;OUR TEAM MEMBERS</h3>
@@ -147,12 +148,20 @@ PUSH YOUR LIMIT
             <input type="text" placeholder="Name" required /><input
               type="number"
               placeholder="Phone"
+              maxlength="10"
+              title="Your Phone Number"
             />
           </div>
           <br />
           <div class="mail">
-            <input type="email" placeholder="E-mail" required />
-            <select name="type" id="gain">
+            <input
+              type="email"
+              placeholder="E-mail"
+              pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*$"
+              title="Should contain @"
+              required
+            />
+            <select name="type" id="gain" title="What's your AIM">
               <option value="body">Body Building</option>
               <option value="box">Boxing</option>
               <option value="cross">Cross Fit</option>
@@ -167,6 +176,7 @@ PUSH YOUR LIMIT
               cols="70"
               rows="10"
               placeholder="Message in 40 Words"
+              title="Give Message"
             ></textarea>
           </div>
           <br />
@@ -177,7 +187,7 @@ PUSH YOUR LIMIT
     <hr />
     <footer id="end">
       <div id="schedule">
-        <h2>OPEN HOUR</h2>
+        <h2><u>OPEN HOUR</u></h2>
         <h5>Monday 11am-7pm</h5>
         <h5>Tuesday-Friday 11am-8pm</h5>
         <h5>Saturday-Sunday 11am-3pm</h5>

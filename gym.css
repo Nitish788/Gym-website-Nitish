@@ -10,6 +10,7 @@
     align-items: center;
     position: sticky;
     top: 0px;
+    z-index: 10;
 }
 
 #navbar::before {
@@ -35,6 +36,7 @@
 
 #navbar ul {
     display: flex;
+    justify-content: center;
 }
 
 #navbar ul li {
@@ -73,7 +75,7 @@
 
 .btn {
     position: relative;
-    left: 340px;
+    left: 21rem;
     padding: 15px 25px;
     background-color: rgba(238, 33, 26, 0.952);
     border-radius: 42px;
@@ -330,8 +332,14 @@ button:hover {
     margin-left: 2px;
 }
 
+.contact img {
+    position: relative;
+    bottom: 2.8rem;
+}
+
 #contact {
     display: flex;
+    background-color: black;
 }
 
 #for {
@@ -352,36 +360,52 @@ button:hover {
     bottom: 1.2em;
     font-size: 1.8em;
     font-family: "Oswald", sans-serif;
+    color: white;
+}
+
+input {
+    background-color: black;
+    color: white;
+}
+
+input:focus {
+    outline: none;
 }
 
 input[type="text"] {
     padding: 2em;
     max-width: 100em;
     text-transform: capitalize;
-    border: 2px solid white;
-    border-bottom: 4px solid gray;
+    border: 2px solid black;
+    border-bottom: 3px solid gray;
     margin-right: 3em;
 }
 
 input[type="number"] {
     padding: 2em;
     max-width: 100%;
-    border: 2px solid white;
-    border-bottom: 4px solid gray;
+    border: 2px solid black;
+    border-bottom: 3px solid gray;
 }
 
 select {
     padding: 2em;
     max-width: 100%;
-    border: 2px solid white;
-    border-bottom: 4px solid gray;
+    border: 2px solid black;
+    border-bottom: 3px solid gray;
+    background-color: black;
+    color: white;
+}
+
+select:focus {
+    outline: none;
 }
 
 input[type="email"] {
     padding: 2em;
     max-width: 100em;
-    border: 2px solid white;
-    border-bottom: 4px solid gray;
+    border: 2px solid black;
+    border-bottom: 3px solid gray;
     margin-right: 3em;
 }
 
@@ -406,7 +430,8 @@ textarea::placeholder {
     left: 11rem;
     font-size: 1.5rem;
     font-family: cursive;
-    color: black;
+    color: white;
+    opacity: 0.5;
 }
 
 textarea {
@@ -414,6 +439,9 @@ textarea {
     position: relative;
     right: 3rem;
     text-transform: capitalize;
+    background-color: black;
+    color: white;
+    border: black;
 }
 
 #end::before {
@@ -426,7 +454,7 @@ textarea {
     background-size: 80em 60em;
     position: absolute;
     z-index: -1;
-    opacity: 0.7;
+    /* opacity: 0.7; */
 }
 
 footer {
@@ -436,7 +464,8 @@ footer {
 #schedule {
     position: relative;
     top: 8em;
-    left: 4em;
+    left: 3em;
+    color: white;
 }
 
 #schedule h2,
@@ -446,18 +475,24 @@ h5 {
 
 #schedule h2 {
     font-size: 2rem;
+    position: relative;
+    right: 1rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-style: oblique;
 }
 
 #schedule h5 {
     position: relative;
     /* left: 1.2em; */
-    font-size: 1.3em;
+    font-size: 1.3rem;
 }
 
 #end pre {
     position: relative;
     top: 18em;
     left: 26em;
+    color: white;
+    z-index: 5;
 }
 
 pre strong {
